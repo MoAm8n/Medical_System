@@ -1,0 +1,21 @@
+# تبعيات npm
+node_modules/
+
+# ملفات البيئة
+.env
+.env.local
+
+# مجلد البناء
+build/
+dist/
+
+# ملفات نظام
+.DS_Store
+Thumbs.db
+
+# إعدادات IDE
+.idea/
+.vscode/
+
+# ملفات السجل
+*.log

@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Medical_System/static/css/main.4194df3c.css",
+    "main.js": "/Medical_System/static/js/main.af21a0c6.js",
+    "static/media/doc4.png": "/Medical_System/static/media/doc4.b55a54011a1a5ce1739a.png",
+    "static/media/imageBlog.png": "/Medical_System/static/media/imageBlog.f522236a0ce6f6315910.png",
+    "static/media/Pagedoc1.png": "/Medical_System/static/media/Pagedoc1.20232eb7add5335d5ca5.png",
+    "static/media/imageBox4.png": "/Medical_System/static/media/imageBox4.9eba77dd0e9a9b48521e.png",
+    "static/media/imageBox6.png": "/Medical_System/static/media/imageBox6.deccf9ae8202cc1add69.png",
+    "static/media/imageBox5.png": "/Medical_System/static/media/imageBox5.0454bb4487b0b9ca5d25.png",
+    "static/media/map.png": "/Medical_System/static/media/map.830ee8954ab1a270b5a4.png",
+    "static/media/imageBox3.png": "/Medical_System/static/media/imageBox3.cd891b56f033674fc8c1.png",
+    "static/media/imageBox1.png": "/Medical_System/static/media/imageBox1.2fbf9936243d1d7dcfc7.png",
+    "static/media/doc2.png": "/Medical_System/static/media/doc2.f37c956e32a13d8c394e.png",
+    "static/media/imageBox2.png": "/Medical_System/static/media/imageBox2.c3065813d8755904e39a.png",
+    "static/media/doc3.png": "/Medical_System/static/media/doc3.b249b46448c72cf22e8c.png",
+    "static/media/selectDoc4.png": "/Medical_System/static/media/selectDoc4.3245c05e766f3d1269f3.png",
+    "static/media/doc1.png": "/Medical_System/static/media/doc1.ecbd8d6b277289ce6693.png",
+    "static/media/selectDoc3.png": "/Medical_System/static/media/selectDoc3.5994f9ce142b18fcf4dd.png",
+    "static/media/selectDoc1.png": "/Medical_System/static/media/selectDoc1.08f84fd3ab50dc351336.png",
+    "static/media/selectDoc2.png": "/Medical_System/static/media/selectDoc2.be8865f877c14eb5a24a.png",
+    "static/media/Blog1.png": "/Medical_System/static/media/Blog1.278f7c4977ad84e7b14d.png",
+    "static/media/preview 1.png": "/Medical_System/static/media/preview 1.5241909e8e68416c640c.png",
+    "static/media/BGE1.png": "/Medical_System/static/media/BGE1.392cfc6fb1b40b9844c8.png",
+    "index.html": "/Medical_System/index.html",
+    "main.4194df3c.css.map": "/Medical_System/static/css/main.4194df3c.css.map",
+    "main.af21a0c6.js.map": "/Medical_System/static/js/main.af21a0c6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4194df3c.css",
+    "static/js/main.af21a0c6.js"
+  ]
+}
