@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <title>إعادة توجيه...</title>
   <script>
-    sessionStorage.redirect = location.pathname;
+  if(window.location.pathname === '/' || window.location.pathname === '/Medical_System') {
+    window.location.replace('/Medical_System/');
+  }
   </script>
   <meta http-equiv="refresh" content="0;URL='/Medical_System/'" />
 </head>
