@@ -1,0 +1,70 @@
+img{
+    width: 100%;
+}
+.BtnHome{
+    width: 140px;
+    height: 40px;
+    border: 1px solid #fff;
+    transition: all 0.8s;
+}
+.about img{
+    position: absolute;
+    left: 180px;
+    top: 35px;
+    width: 80%;
+    z-index: 1000;
+}
+.aboutOverlay::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #00000071;
+    top: 0;
+    left: 0;
+}
+.about::before{
+    position: absolute;
+    content: "";
+    left: 194px;
+    top: 27px;
+    width: 80%;
+    height: 85%;
+    background: linear-gradient(to bottom, #887856, #C1B7A1);
+}
+.about::after{
+    position: absolute;
+    content: "";
+    height: 81%;
+    background-color: #00000071;
+    left: 180px;
+    top: 35px;
+    width: 80%;
+    z-index: 100000;
+}
+.playAbout{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999999;
+    color: #887856;
+    font-size: 50px;
+    cursor: pointer;
+} 
+.box{
+    box-shadow: 0px 4px 15px 1px rgba(0, 0, 0, 0.2);
+}
+.box:hover{
+    background-color: #FFF1D4;
+}
+.swiper-wrapper{
+    height: auto !important;
+}
+.swiper-pagination-bullet-active {
+    background-color: #887856 !important;
+}
+.swiper-pagination-bullet{
+    width: 15px !important;
+    height: 15px !important;
+}
