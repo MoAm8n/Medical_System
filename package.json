@@ -1,7 +1,7 @@
 {
   "name": "medical",
-  "homepage": "https://github.com/MoAm8n/Medical_System.git",
   "version": "0.1.0",
+  "homepage": "https://MoAm8n.github.io/Medical_System",
   "private": true,
   "dependencies": {
     "@tailwindcss/forms": "^0.5.10",
