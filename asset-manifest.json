@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Medical_System/static/css/main.c52f05f5.css",
-    "main.js": "/Medical_System/static/js/main.222806b4.js",
+    "main.css": "/Medical_System/static/css/main.35b18858.css",
+    "main.js": "/Medical_System/static/js/main.e3af60bb.js",
     "static/media/doc4.png": "/Medical_System/static/media/doc4.b55a54011a1a5ce1739a.png",
     "static/media/imageBlog.png": "/Medical_System/static/media/imageBlog.f522236a0ce6f6315910.png",
     "static/media/Pagedoc1.png": "/Medical_System/static/media/Pagedoc1.20232eb7add5335d5ca5.png",
@@ -23,11 +23,11 @@
     "static/media/preview 1.png": "/Medical_System/static/media/preview 1.5241909e8e68416c640c.png",
     "static/media/BGE1.png": "/Medical_System/static/media/BGE1.392cfc6fb1b40b9844c8.png",
     "index.html": "/Medical_System/index.html",
-    "main.c52f05f5.css.map": "/Medical_System/static/css/main.c52f05f5.css.map",
-    "main.222806b4.js.map": "/Medical_System/static/js/main.222806b4.js.map"
+    "main.35b18858.css.map": "/Medical_System/static/css/main.35b18858.css.map",
+    "main.e3af60bb.js.map": "/Medical_System/static/js/main.e3af60bb.js.map"
   },
   "entrypoints": [
-    "static/css/main.c52f05f5.css",
-    "static/js/main.222806b4.js"
+    "static/css/main.35b18858.css",
+    "static/js/main.e3af60bb.js"
   ]
 }
