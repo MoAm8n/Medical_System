@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useAuth } from '../contexts/AuthContext'
+// import { useAuth } from '../contexts/AuthContext'
 import { useNavigate } from 'react-router-dom';
 import Vector from '../data/Vector.png'
 
@@ -10,7 +10,7 @@ const MyPage = () => {
     const [number, setNumber] = useState('')
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState('')
-    const {signup} = useAuth()
+    // const {signup} = useAuth()
     const navigate  = useNavigate()
   
     const handleSubmit = async(e) => {
@@ -31,7 +31,7 @@ const MyPage = () => {
       try{
         setError('')
         setLoading(true)
-        await signup(email, password)
+        // await signup(email, password)
         navigate('/')
       }
       catch(err){

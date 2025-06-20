@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
+import { useUser, UserButton } from "@clerk/clerk-react";
 import { IoMenu } from "react-icons/io5";
 import { Link, NavLink } from 'react-router-dom';
 import logo from '../data/logo.png';
 import { links, linksMyPage } from '../data/dummy';
 import { useStateContext } from '../contexts/StateContext';
-
+import { SignedIn, SignedOut, SignInButton } from '@clerk/clerk-react';
 
 const Navbar = ({ onResetReservation }) => {
     const { currentColor, setActiveMenu, handleLogout } = useStateContext();
     const [isMyPageOpen, setIsMyPageOpen] = useState(false);
     const activeLink = 'font-bold';
+    const { isSignedIn, user } = useUser();
 
     const handleMenu = () => setActiveMenu(true);
     const handleReservationClick = () => onResetReservation?.();
@@ -86,34 +88,36 @@ const Navbar = ({ onResetReservation }) => {
                         </div>
                     ))}
                 </div>
-
-                <div className='flex gap-3 max-lg:hidden'>
-                    <NavLink 
-                        to='/تسجيل-الدخول'
+                <div className="flex gap-3 max-lg:hidden items-center">
+                    <SignedIn>
+                        <div className="flex items-center gap-2">
+                        <UserButton />
+                        <span className="text-white">{user?.firstName || user?.username}</span>
+                        </div>
+                    </SignedIn>
+                    <SignedOut>
+                        <NavLink
+                        // to="/تسجيل-الدخول"
                         className={({ isActive }) =>
                             `border border-white w-36 flex items-center justify-center px-4 py-2 transition-colors ${
-                                isActive
-                                ? 'text-black bg-white'
-                                : 'text-white hover:bg-white hover:text-black'
+                                isActive ? 'text-black bg-white' : 'text-white hover:bg-white hover:text-black'
                             }`
                         }
-                    >
-                        تسجيل الدخول
-                    </NavLink>
-                    <NavLink 
-                        to='/إنشاء-حساب'
+                        >
+                        <SignInButton/>
+                        </NavLink>
+                        </SignedOut>
+                        <NavLink
+                        to="/إنشاء-حساب"
                         className={({ isActive }) =>
                             `border border-white w-36 flex items-center justify-center px-4 py-2 transition-colors ${
-                                isActive
-                                ? 'text-black bg-white'
-                                : 'text-white hover:bg-white hover:text-black'
+                            isActive ? 'text-black bg-white' : 'text-white hover:bg-white hover:text-black'
                             }`
                         }
-                    >
-                        إنشاء حساب
-                    </NavLink>
+                        >
+                            انشاء الحساب
+                        </NavLink>
                 </div>
-
                 <button 
                     className='lg:hidden text-3xl text-white hover:opacity-80 transition-opacity'
                     onClick={handleMenu}

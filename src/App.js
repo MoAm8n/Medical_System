@@ -6,7 +6,6 @@ import { Home, About, Services, Doctors, Blog, Reservation, CallMe,
         MyPage, Login, Notifications, Reservations, CreateAccount, 
         Sections } from './Pages';
 import { StateContextProvider } from './contexts/StateContext';
-import { SignedIn, SignedOut, SignInButton, UserButton } from '@clerk/clerk-react';
 
 function App() {
   const [resetReservation, setResetReservation] = useState(() => {});
@@ -20,12 +19,7 @@ function App() {
       <BrowserRouter basename="/Medical_System">
         <Navbar onResetReservation={resetReservation} />
         <Sidebar /> 
-          <SignedOut>
-          <SignInButton />
-          </SignedOut>
-          <SignedIn>
-          <UserButton />
-          </SignedIn>
+
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/الرئيسية' element={<Home />} />
