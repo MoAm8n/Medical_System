@@ -11,7 +11,7 @@ export const StateContextProvider = ({ children }) => {
     const handleLogout = () => setShowLogoutOverlay(true);
     const handleConfirmLogout = () => {
         localStorage.clear();
-        window.location.href = '/الرئيسية';
+        window.location.href = '/Medical_System/';
     };
 
     return (

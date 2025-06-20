@@ -38,7 +38,7 @@ const Navbar = ({ onResetReservation }) => {
                                     </button>
                                     {isMyPageOpen && (
                                         <div 
-                                            className="absolute right-0 py-2 mt-2 w-48 bg-white shadow-lg z-10 rounded-md"
+                                            className="absolute right-0 py-2 mt-2 w-48 bg-white shadow-lg z-[9999T] rounded-md"
                                             onMouseLeave={() => setIsMyPageOpen(false)}
                                         >
                                             {linksMyPage.map((subItem) => (

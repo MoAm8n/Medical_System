@@ -3,15 +3,22 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { ContextProvider } from './contexts/ContextProvider';
-import { AuthProvider } from './contexts/AuthContext';
+// import { AuthProvider } from './contexts/AuthContext';
+import { ClerkProvider } from '@clerk/clerk-react'
 
+const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY
+if (!PUBLISHABLE_KEY) {
+  throw new Error('Missing Publishable Key')
+}
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ContextProvider>
-      <AuthProvider>
+      {/* <AuthProvider> */}
+        <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl='/Medical_System/'>
           <App />
-      </AuthProvider>
+        </ClerkProvider>
+      {/* </AuthProvider> */}
     </ContextProvider>
   </React.StrictMode>
 );

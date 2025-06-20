@@ -3,7 +3,7 @@ import { IoLogOutOutline } from "react-icons/io5";
 
 const LogoutOverlay = ({ onConfirm, onCancel }) => {
     return (
-        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[1000]">
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-[9999]">
             <div className="bg-white p-6 shadow-lg md:w-96 h-72 flex justify-center items-center flex-col gap-4" dir="rtl">
                 <p className='text-[#FF0000] '><IoLogOutOutline size={60}/></p>
                 <h2 className="text-xl font-bold">تسجيل الخروج</h2>
