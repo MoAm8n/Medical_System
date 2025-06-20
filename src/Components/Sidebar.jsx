@@ -67,17 +67,17 @@
             </SignedIn>
             <SignedOut>
                 <NavLink
-                to="/تسجيل-الدخول"
+                // to="/تسجيل-الدخول"
                 className={({ isActive }) =>
                     `border border-white w-36 flex items-center justify-center px-4 py-2 transition-colors text-right ${
                     isActive ? 'text-black bg-white' : 'text-white hover:bg-white hover:text-black'
                     }`
                 }
                 >
-                تسجيل الدخول
+                {/* تسجيل الدخول */}
                 <SignInButton mode="modal" afterSignInUrl="/الرئيسية" />
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                 to="/إنشاء-حساب"
                 className={({ isActive }) =>
                     `border border-white w-36 flex items-center justify-center px-4 py-2 transition-colors text-right ${
@@ -86,7 +86,7 @@
                 }
                 >
                 إنشاء حساب
-                </NavLink>
+                </NavLink> */}
             </SignedOut>
             </div>
             <div className="flex-1 flex flex-col gap-4 overflow-y-auto">
